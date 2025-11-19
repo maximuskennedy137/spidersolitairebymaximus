@@ -1221,7 +1221,7 @@ jQuery(function($) {
                 'congrats' :
                     'Congratulations, you have finished and your score is %score%<br><br>',
                 'confirmNew' :
-                    'You are in the middle of a game, are you sure?',
+                    'You are in the middle of a game, stupid, are you sure?',
                 'saveRestore' :
                     '<div class="ssSaveRestore">' +
                     '<textarea id="ssrestorestring">%gameString%</textarea><br>' +
