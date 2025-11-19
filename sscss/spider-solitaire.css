@@ -8,8 +8,8 @@
 .spidersolitaire div form input {width:45%;margin-bottom:3px;height:40px;}
 .spidersolitaire div form input:nth-child(odd) {margin-right:3px;}
 .spidersolitaire #ssScore {width: 128px;background-color:white;display:inline-block;margin:3px;}
-.spidersolitaire #workspace {padding:20px;width:142px;vertical-align:top;background-color:#807000;height:calc(100% - 40px);min-height:350px;}
-.spidersolitaire #table {padding:20px;min-height:350px;height:calc(100% - 40px);background-color:#008800;}
+.spidersolitaire #workspace {padding:20px;width:142px;vertical-align:top;background-color:#5E4E96;height:calc(100% - 40px);min-height:350px;}
+.spidersolitaire #table {padding:20px;min-height:350px;height:calc(100% - 40px);background-color:#824E96;}
 
 .spidersolitaire .base {width:71px;min-height:96px;background-image:url(../ssimages/card_pos.gif);position:relative;background-repeat:no-repeat;line-height:0;}
 
