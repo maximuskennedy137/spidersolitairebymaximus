@@ -434,7 +434,7 @@ jQuery(function($) {
                 }
             }
             if (stack != 10) {
-                ssObj.alert("You can´t deal when there are empty spaces smh my head");
+                ssObj.alert("You can not deal when there are empty spaces smh my head");
                 return;
             }
 
@@ -1221,7 +1221,7 @@ jQuery(function($) {
                 'congrats' :
                     'Congratulations, you have finished and your score is %score%<br><br>',
                 'confirmNew' :
-                    'You´re in the middle of a game, stupid. Are you sure?',
+                    'You are in the middle of a game, stupid. Are you sure?',
                 'saveRestore' :
                     '<div class="ssSaveRestore">' +
                     '<textarea id="ssrestorestring">%gameString%</textarea><br>' +
