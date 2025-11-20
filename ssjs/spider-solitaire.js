@@ -434,7 +434,7 @@ jQuery(function($) {
                 }
             }
             if (stack != 10) {
-                ssObj.alert("You cannot deal when there are empty spaces");
+                ssObj.alert("You can´t deal when there are empty spaces smh my head");
                 return;
             }
 
@@ -445,7 +445,7 @@ jQuery(function($) {
                 }
             }
             if (stack == -1) {
-                ssObj.alert('No cards left to deal');
+                ssObj.alert('No cards left to deal rip');
                 $('#Deal').prop('disabled', true);
             } else {
                 // deal the deck we found
@@ -1221,7 +1221,7 @@ jQuery(function($) {
                 'congrats' :
                     'Congratulations, you have finished and your score is %score%<br><br>',
                 'confirmNew' :
-                    'You are in the middle of a game, stupid, are you sure?',
+                    'You´re in the middle of a game, stupid. Are you sure?',
                 'saveRestore' :
                     '<div class="ssSaveRestore">' +
                     '<textarea id="ssrestorestring">%gameString%</textarea><br>' +
