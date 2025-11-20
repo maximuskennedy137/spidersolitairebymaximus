@@ -258,7 +258,8 @@ jQuery(function($) {
                     );
             }
 
-           
+  // make sure none of the basic table items are draggable
+             $('*').attr('draggable', false);
 
             // create the cards and shuffle them
             ssObj.prepareCards(forgetOld);
