@@ -258,8 +258,7 @@ jQuery(function($) {
                     );
             }
 
-            // make sure none of the basic table items are draggable
-            $('*').attr('draggable', false);
+           
 
             // create the cards and shuffle them
             ssObj.prepareCards(forgetOld);
@@ -985,40 +984,7 @@ jQuery(function($) {
                 baseStyling += '.spidersolitaire #base_' + stack + ' .card {margin-top:' + calcMargin + 'px;}\n';
             }
             $('#customStyle').html(baseStyling);
-        };
-
-
-        // set the attributes of the cards so only the draggable ones can be dragged
-        this.setDraggableCards = function () {
-            // iterate through each pile to see if cards can be dragged
-            //first set all cards to non-draggable:
-            ssObj.piles.forEach ( function (pile, pileIndex) {
-                pile.forEach( function (card, cardIndex) {
-                    card.canDrag = false;
-                    $('#' + card.id).removeClass('canDrag');
-                });
-            });
-
-            // now go determine which cards can be dragged and set them up accordingly
-            ssObj.piles.forEach ( function (pile, pileIndex) {
-                if (pileIndex >= 13) {
-                    if (pile.length) {
-                        pile[pile.length - 1].canDrag = true;
-                        $('#' + pile[pile.length - 1].id).addClass('canDrag');
-                    }
-                    for (var cardIndex = pile.length - 2; cardIndex >= 0; cardIndex--) {
-                        if ((pile[cardIndex].hierarchy == pile[cardIndex + 1].hierarchy + 1) &&(pile[cardIndex].suit == pile[cardIndex + 1].suit)) {
-                            pile[cardIndex].canDrag = true;
-                               $('#' + pile[cardIndex].id).addClass('canDrag');
-                        } else {
-                            break;
-                        }
-                    }
-                }
-            });
-
-            $('*').prop('draggable', false);
-            $('.canDrag').prop('draggable', true)
+        
         };
 
 
